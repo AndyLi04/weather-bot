@@ -2,9 +2,8 @@ import discord
 import requests
 import json
 from weather import *
-from datetime import date, datetime
 
-with open('/Users/andyli/Documents/Prog1_Indem/folder.secret/secrets.json') as secret_file:
+with open(path) as secret_file:
     secrets = json.load(secret_file)
 
 token = secrets['token']
